@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="A simple daily calendar app for scheduling your work day"/>
+    <link rel="icon" href="assets/image/Screen Shot 2023-04-17 at 12.14.16 pm.png" type="image/png">
+
+<!--! ========================== ADDING LINKS ================================ -->       
+<!--Step 1: Reset CSS file. credit: elad2412 https://github.com/elad2412/the-new-css-reset/blob/main/css/reset.css -->
+    <link rel="reset" href="assets/reset.css"/>  
+<!--Step 2 (after reset): allow Bootstrap CSS and Fonts links (provided) -->
+    <link
+    rel="stylesheet"  
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>   
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"/>
+<!--Step 3: add my own stylesheet -->
+    <link rel="stylesheet" href="assets/style.css"/> 
+    <title>King's Daily Calendar</title> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous">
+    </script>
+  </head>    
+
+  <body>
+    <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
+      <h1 class="display-3">&#128197 King's Daily Calendar &#128081</h1>
+      <p class="main-text">A simple calendar app for scheduling your day in the most efficient way</p>
+      <p id="todaysDate" class="main-text"></p>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="script.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+        crossorigin="anonymous">
+      </script>
+    </header>  
+    <br>
+    <div class="container-lg px-5">   <!--! requirement 2: have timeblocks for each business hour -->
+      <div class="row time-block color" id = "8">
+        <div class="col-2 col-md-1 hour text-center py-3">8AM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "9">
+        <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "10">
+        <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "11">
+        <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "12">
+        <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "13">
+        <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+      
+      <div class="row time-block color" id = "14">
+        <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "15">
+        <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "16">
+        <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="row time-block color" id = "17">
+        <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3" > </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
+      <br>
+      <br>
+      <footer>© 2023 AussieKing</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -47,7 +47,7 @@ Clone the repository to your local machine and open the `index.html` file in you
   - Local Storage
   - Functions
   - Classes
- - API (3rd parties)
+- API (3rd parties)
   - jQuery
   - DayJS
   - Google Fonts
@@ -58,12 +58,20 @@ Clone the repository to your local machine and open the `index.html` file in you
 
 ### Current Date
 
+![Screen Shot 2023-04-17 at 1 09 39 pm](https://user-images.githubusercontent.com/126050763/232368974-8108d208-8761-45cc-9903-0014587b0163.png)
+
 ### Color coded timeblocks
 
+![Screen Shot 2023-04-17 at 1 10 16 pm](https://user-images.githubusercontent.com/126050763/232368991-13b21605-b780-41ca-b05c-4fcc8ac32edc.png)
 
 ### Save button
 
+![Screen Shot 2023-04-17 at 1 12 44 pm](https://user-images.githubusercontent.com/126050763/232369114-0eae4205-5601-4c09-801b-d2fa3a5b67dd.png)
+
+
 ### Local Storage
+
+![Screen Shot 2023-04-17 at 1 11 13 pm](https://user-images.githubusercontent.com/126050763/232369026-dce6aa20-0a69-4c6c-877b-3cac93cc4423.png)
 
 ## Live URL and Repository
 
